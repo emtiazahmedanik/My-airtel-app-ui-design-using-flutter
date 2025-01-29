@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:myair/SecondPage.dart';
 
 class firstPage extends StatelessWidget {
 
@@ -313,6 +314,13 @@ class firstPage extends StatelessWidget {
               ],
             ),
           ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromRGBO(224, 200, 300, 1),
+          onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage()));
+          },
+        child: Icon(Icons.rocket_launch_sharp,color: Colors.white,size: 14,),
       ),
     );
   }
